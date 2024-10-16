@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th><button id="1"">Nombre</button></th>
+                <th><button id="2">Rubro</button></th>
+                <th><button id="3">Stock</button></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="cuerpo"></tbody>
+    </table>
+    <button id="crear-p-btn">Sumar producto</button>
+    <button id="filtrar-rubros">Filtrar Rubros</button>
+
+    <dialog id="pop-up">
+        <h2>Modificar Stock</h2>
+        <p>Ingrese el nuevo stock para el producto seleccionado:</p>
+        <input type="number" id="nuevo-stock-id" placeholder="Ingrese el nuevo stock">
+        <button id="cerrar">Aceptar</button>
+    </dialog>
+
+    <dialog id="pop-up2">
+        <h2>Nuevo Objeto</h2>
+        <p>Ingrese el nombre del producto</p>
+        <input type="text" id="nombre-nuevo-p">
+        <p>Elija el rubro, o cree uno nuevo</p>
+        <input type="text" id="rubro-nuevo-p">
+        <p>Ingrese el stock del producto</p>
+        <input type="number" id="stock-nuevo-p">
+        <button id="cerrar2">Aceptar</button>
+    </dialog>
+
+    <dialog id="pop-up3">
+        <h2>Filtrar Rubros</h2>
+        <p>Seleccione el rubro del que quiera visualizar los productos.</p>
+        <select name="Rubros" id="rubros-desplegable" onchange="filtrarRubros(catalogo)">
+        
+        </select>
+    </dialog>
+    
+    <script src="js.js"></script>
+</body>
+</html>

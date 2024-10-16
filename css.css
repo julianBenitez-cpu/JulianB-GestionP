@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #34495e;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --text-color: #ecf0f1;
+    --background-color: #f0f4f8;
+    --border-color: #bdc3c7;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+input, select, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+input, select {
+    background-color: #fff;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, button:focus {
+    background-color: var(--secondary-color);
+    outline: none;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: var(--text-color);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+td {
+    background-color: #ffffff;
+}
+
+#45 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px;
+    color: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+    input, select, button, table {
+        width: 100%;
+    }
+}
